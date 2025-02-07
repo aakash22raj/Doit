@@ -1,0 +1,131 @@
+.app {
+    display: flex;
+    width: 92%;
+    min-height: 100vh;
+}
+
+.sidebar{
+    width: 25%;
+    min-height: 120vh;
+    /* border-top: 0; */
+    font-size: max(1vw, 10px);
+    background-color: rgb(230, 242, 230);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hidden {
+    transform: translateX(-100%);
+    position: absolute;
+}
+
+.dp {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+.dp img{
+    width: 100px;
+    border-radius: 50px;
+}
+.dp p{
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebar-options{
+    background-color: white;
+    margin: 10px 15px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border-radius: 3px;
+}
+
+.sidebar-option{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+.sidebar-option p{
+    color: black;
+    font-size: 14px;
+}
+.sidebar-option i{
+    color: black;
+    font-size: 22px;
+}
+
+.sidebar-option.active{
+    background-color: rgb(206, 237, 206);
+}
+
+.sidebar-task{
+    background-color: white;
+    margin: 10px 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border-radius: 3px;
+}
+.sidebar-tasks{
+    /* align-items: center; */
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+.task-sidebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-sidebar i{
+    font-size: 16px;
+}
+.sidebar-tasks hr{
+    margin-top: 10px;
+}
+
+.main-content {
+    width: 100%;
+    /* padding: 20px; */
+    padding-left: 2rem;
+    transition: width 0.5s ease-in-out;
+}
+
+.full-width {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+@media (max-width:850px){
+    .sidebar {
+        width: 30%;
+    }
+
+    .main-content {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        position: absolute;
+        transform: translateX(-100%);
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}

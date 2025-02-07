@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar-logo img{
+    width: 7rem;
+    cursor: pointer;
+}
+
+.navbar-logo i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar-icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar-icons i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.completed{
+    padding-top: 15px;
+}
+.completed p{
+    font-size: 15px;
+}
+
+.completed-todo{
+    padding-top: 2rem;
+}
+
+.completed-icons i{
+    color: rgb(46, 113, 46);
+}
+
+.completed-icons p{
+    text-decoration: line-through;
+}

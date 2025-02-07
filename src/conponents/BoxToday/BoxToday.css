@@ -1,0 +1,33 @@
+.boxtoday{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 15px;
+}
+
+.boxtoday-add-todo{
+    flex: 1 1 calc(20% - 40px);
+    max-width: 290px;
+    min-width: 240px;
+    padding: 40px 15px;
+    border: 1px solid #cce7d0;
+}
+.box-todo{
+    display: flex;
+    justify-content: space-between;
+}
+.boc-todo-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.box-todo i{
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 480px) {
+    .boxtoday-add-todo {
+        flex: 1 1 calc(100% - 20px); 
+    }
+}

@@ -1,0 +1,70 @@
+.today hr{
+    padding: .8px;
+    background-color: rgb(191, 216, 191);
+    border: none;
+}
+.today-todo{
+    display: flex;
+    gap: .3rem;
+    color: rgb(59, 79, 59);
+    font-size: 15px;
+}
+.today-todo i{
+    font-size: 16px;
+}
+
+.today-task{
+    background-color: rgb(230, 242, 230);
+    padding: 10px 20px;
+}
+.today-todo p{
+    font-size: 14px;
+}
+.today-task p{
+    padding-top: 2rem;
+}
+.today p{
+    color: rgb(53, 67, 53);
+}
+.today-add-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+.today-icons{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 20px;
+    color: black;
+}
+.today-icons i{
+    cursor: pointer;
+}
+.today-button button{
+    padding: 7px 20px;
+    border-radius: 7px;
+    background-color: rgb(191, 216, 191);
+    border: none;
+    font-size: 15px;
+    color: rgb(5, 90, 5);
+    cursor: pointer;
+}
+
+
+
+.add-todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.add-todo-icons{
+    display: flex;
+    gap: 1rem;
+}
+.add-todo i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
